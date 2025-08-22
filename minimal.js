@@ -1,7 +1,5 @@
-#!/usr/bin/env node
 const fs = require("fs");
 
-// Parse number from any base (2-36)
 function parseBase(str, base) {
   let result = 0n,
     b = BigInt(base);
@@ -20,13 +18,11 @@ function parseBase(str, base) {
   return result;
 }
 
-// GCD for BigInt
 function gcd(a, b) {
   while (b) [a, b] = [b, a % b];
   return a < 0n ? -a : a;
 }
 
-// Rational number operations
 function addFrac([n1, d1], [n2, d2]) {
   let num = n1 * d2 + n2 * d1,
     den = d1 * d2,
@@ -40,7 +36,6 @@ function mulFrac([n1, d1], [n2, d2]) {
   return [num / g, den / g];
 }
 
-// Main function
 function solve(file) {
   let data = JSON.parse(fs.readFileSync(file, "utf8"));
   let points = Object.keys(data)
