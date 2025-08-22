@@ -73,4 +73,4 @@ Contributions are welcome! If you have suggestions or improvements, please open 
 
 Thank you for checking out this project! We hope it's helpful for your Lagrange interpolation needs.
 
-This is written by [readme.ai](https://readme-generator-phi.vercel.app/).
+This is written by [readme.ai](https://readme-generator-phi.vercel.app/). (Project by - Lakshit Agarwal)
